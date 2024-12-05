@@ -5,8 +5,10 @@ import pygame, copy
 
 class Game:
     def __init__(self, playerCount=3):
-        if playerCount in (2,3): self.playerCount = playerCount
-        else: self.playerCount = 3
+        if playerCount in (2,3):
+            self.playerCount = playerCount
+        else:
+            self.playerCount = 3
         self.pieces: dict[int, set[Piece]] = {1:set(), 2:set(), 3:set()}
         self.board = self.createBoard(playerCount)
         #for drawing board

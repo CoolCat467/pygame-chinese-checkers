@@ -6,7 +6,7 @@ import pygame
 from pygame.locals import *
 from PySide6 import QtWidgets
 from time import strftime
-from custom_bots import *
+from pgc_checkers.custom_bots import *
 
 class LoopController:
     
